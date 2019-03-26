@@ -22,7 +22,7 @@
     <meta name="description" content="I'm a gradute studying Computer Science at USC. I'm proficient in Java, Python, and Android Development. Previously, I worked on the Android team at Zillow and as an undergradute researcher with focus on Semantic analysis (machine learning) at The University of Hong Kong. Over the last few years I've developed apps and worked on projects such as CityTour and SmartLock. I am a big fan of traveling and I am super interested in the combination of traveling and technology!!!">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Android · Nicole Han</title>
+    <title>City Tour App (Introduction) · Nicole Han</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">Nicole Han</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Android</a>
+                <a href="#" class="post-name">City Tour App (Introduction)</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Android
+            City Tour App (Introduction)
             <!-- 404 -->
             
         </h1>
@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">187</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">619</span>Reading time: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -401,16 +401,25 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h1><h2 id="Android-provides"><a href="#Android-provides" class="headerlink" title="Android provides - "></a>Android provides - </h2><p><strong>RecycleView:</strong></p>
-<ol>
-<li>The views in the list are represented by view holder objects. These objects are instances of a class you define by extending RecyclerView.ViewHolder. Each view holder is in charge of displaying a single item with a view. For example, if your list shows music collection, each view holder might represent a single album. The RecyclerView creates only as many view holders as are needed to display the on-screen portion of the dynamic content, plus a few extra. As the user scrolls through the list, the RecyclerView takes the off-screen views and rebinds them to the data which is scrolling onto the screen.</li>
-</ol>
-<h3 id="Why-choose-a-RecyclerView"><a href="#Why-choose-a-RecyclerView" class="headerlink" title="Why choose a RecyclerView?"></a>Why choose a RecyclerView?</h3><blockquote>
-<p>The RecyclerView widget is a more advanced and flexible version of ListView.</p>
+        <h1 id="City-Tour-App-e-commerce-platform-for-private-tour"><a href="#City-Tour-App-e-commerce-platform-for-private-tour" class="headerlink" title="City Tour App: e-commerce platform for private tour"></a>City Tour App: e-commerce platform for private tour</h1><h2 id="Android-app-implementation"><a href="#Android-app-implementation" class="headerlink" title="Android app implementation"></a>Android app implementation</h2><p><strong>Starting tasks and target:</strong></p>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> Conceptualise the user requirements, user interface design, specifying the software system design and structure using UML (unified modelling language) etc.cyclerView takes the off-screen views and rebinds them to the data which is scrolling onto the screen.</li>
+<li style="list-style: none"><input type="checkbox"> Develop a working app with baseline functions e.g. map of point of interest, selection of interest points, optimal routing calculation, cost calculation with the help of Google/Baidu Map SDK/API.</li>
+<li style="list-style: none"><input type="checkbox"> Continue the app development with features e.g. interaction between tour operator and users etc.</li>
+</ul>
+<h3 id="Project-description"><a href="#Project-description" class="headerlink" title="Project description"></a>Project description</h3><p><img src="/assets/citytour/taxi.png" alt="City Tour Taxi"></p>
+<blockquote>
+<p><strong>Uber app</strong> is a successful e-commerce platform that cater “taxi trade” where any registered private driver can be a taxi service provider to meet the rider’s requirement/need. Uber has recently announced “Uber Tour” app that uses the same aforementioned platform to cater “sightseeing tour trade” where any registered private driver can be a tour guide/operator for tourist. </p>
+<blockquote>
+<p>However the Uber Tour app is still in its infancy and is largely based on the taxi trade. </p>
 </blockquote>
-<h3 id="intro"><a href="#intro" class="headerlink" title="intro"></a>intro</h3><blockquote>
-<p>In the RecyclerView model, several different components work together to display your data. The overall container for your user interface is a RecyclerView object that you add to your layout. The RecyclerView fills itself with views provided by a layout manager that you provide. You can use one of our standard layout managers (such as LinearLayoutManager or GridLayoutManager), or implement your own.</p>
+<p>In this project, student is required to design and implement an e-commerce platform similar to Uber taxi with creative ideas or features more adequate for a proper tourism purposes; for example, user is allow to create a list of places (or point of interest) with a priority, your “City Tour” app could generate an optimal route and calculate the cost of travel based on distance, time, labour etc., and publish this as a request to the registered private drivers / tour operators as a potential trade deal. Vice-versa the registered private drivers / tour operators could generate a suggested tour with a fairly calculated cost by your app, and advertise to users. Student could think of further more creative ideas/features.</p>
 </blockquote>
+<h3 id="project-outline"><a href="#project-outline" class="headerlink" title="project outline"></a>project outline</h3><blockquote>
+<p>This project is an implementation of an Android mobile application for individualized tour service, which aims to give tourists car service offered by registered private drivers based on tourists’ unique needs. The main focus of this project will be on route optimization and automatic price calculation. They are more complex than simply finding the shortest path between two points, but the process of determining the most cost-efficient and comfortable route for travelers. Such application, once implemented, may contribute to greater business intelligence and encourage share economy. To conceptualize the user requirements, I will firstly collect the data from users about their requirements by online questionnaire. Data analysis will be done to dig up the importance of each requirement and make a balance between the technical implementation and customer needs. Based on the analyzed data, an interactive prototype of user interface will be initially designed, including layouts, links, as well as transitions in this app. The user interaction of the system will also be shown with this prototype. User is allowed to create a list of places with a priority and the time of departure, and this “City Tour” app could generate an optimal route, calculate the cost of travel and publish this as a request to the registered private drivers or tour operators as a potential trade deal. Vice-versa the registered private drivers or tour operators could generate a suggested tour with a fairly calculated cost by this app, and advertise to users. Due to the large overlapping functions for tour operators and users, instead of separating the whole application into two apps, I will provide role switch function to solve this problem. The main part of this project - optimal routing and cost calculation will be implemented with the help of Google/Baidu Map APIs.</p>
+</blockquote>
+<hr>
+<p>The whole project is published by <strong><a href="https://www.crcpress.com/Mobile-Apps-Engineering-Design-Development-Security-and-Testing/Mostefaoui-Tariq/p/book/9781138054356" target="_blank" rel="noopener">CRC</a></strong> - Mobile Apps Engineering: Design, Development, Security, and Testing (Chapter “City Tour App”)</p>
 
     </article>
     <!-- license  -->
@@ -419,7 +428,7 @@ height:50vh;
             <p>Author：<a href="http://yoursite.com">Nicole Han</a>
             </p><p>原文链接：<a href="http://yoursite.com/2019/03/25/Android/">http://yoursite.com/2019/03/25/Android/</a>
             </p><p>发表日期：<a href="http://yoursite.com/2019/03/25/Android/">March 25th 2019, 2:47:13 pm</a>
-            </p><p>更新日期：<a href="http://yoursite.com/2019/03/25/Android/">March 26th 2019, 12:02:43 pm</a>
+            </p><p>更新日期：<a href="http://yoursite.com/2019/03/25/Android/">March 26th 2019, 2:44:50 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -559,7 +568,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Android"><span class="toc-number">1.</span> <span class="toc-text">Android</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-provides"><span class="toc-number">1.1.</span> <span class="toc-text">Android provides - </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Why-choose-a-RecyclerView"><span class="toc-number">1.1.1.</span> <span class="toc-text">Why choose a RecyclerView?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#intro"><span class="toc-number">1.1.2.</span> <span class="toc-text">intro</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#City-Tour-App-e-commerce-platform-for-private-tour"><span class="toc-number">1.</span> <span class="toc-text">City Tour App: e-commerce platform for private tour</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-app-implementation"><span class="toc-number">1.1.</span> <span class="toc-text">Android app implementation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-description"><span class="toc-number">1.1.1.</span> <span class="toc-text">Project description</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#project-outline"><span class="toc-number">1.1.2.</span> <span class="toc-text">project outline</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -608,7 +617,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">03/25</span><a class="archive-post-title" href="/2019/03/25/Android/">Android</a>
+            <span class="archive-post-date">03/25</span><a class="archive-post-title" href="/2019/03/25/Android/">City Tour App (Introduction)</a>
         </li>
     
     
