@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">135</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">325</span>Reading time: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -412,8 +412,38 @@ height:50vh;
 <p>“to improve programmer productivity by using a database that better matches an application’s needs”</p>
 <p>“to improve data access performance via some combination of handling larger data volumes, reducing latency, and improving throughput”</p>
 </blockquote>
+<h3 id="4-types"><a href="#4-types" class="headerlink" title="4 types"></a>4 types</h3><ol>
+<li>Key-Value: </li>
+</ol>
+<ul>
+<li>e.g. DynamoDB (Amazon) </li>
+<li>The whole db is a dictionary, which has records (“rows”) which have fields (columns).</li>
+</ul>
+<ol start="2">
+<li>Column-Family</li>
+</ol>
+<ul>
+<li>Rather than dealing with rows of data, we deal with columns of them. So such databases are good for aggregate queries (eg. average age of employees in a company), and queries involving just a subset of all columns (eg. retrieve a student’s academic info).</li>
+</ul>
+<ol start="3">
+<li>Graph</li>
+</ol>
+<ul>
+<li>A graph database uses (contains) graph entities such as nodes (vertices), relations (edges), and properties (k-v pairs) on vertices and edges, to store data.</li>
+<li>In a graph db, the focus is on relationships between ‘linked data’.</li>
+<li>Uses: social networks, recommendation engines, etc</li>
+</ul>
+<ol start="4">
+<li>Document: </li>
+</ol>
+<ul>
+<li>e.g. MongoDB</li>
+<li>The basic unit of storage in a document DB is a document - this can be JSON, XML, etc. There can be an arbitrary number of fields (columns and values, ie. k/v pairs) in each document.</li>
+<li>In a document DB, a key is paired with a document (which is its ‘value’), where the document itself can contain multiple k/v pairs, key-array pairs, or even key-document pairs (ie nested documents).</li>
+</ul>
 <h3 id="terms"><a href="#terms" class="headerlink" title="terms"></a>terms</h3><blockquote>
-<p>Node: a single NoSQL db instance - holds a part of a db<br>Cluster: a collection of nodes - holds an entire db</p>
+<p>Node<br>: a single NoSQL db instance - holds a part of a db</p>
+<p>Cluster<br>: a collection of nodes - holds an entire db</p>
 </blockquote>
 
     </article>
@@ -423,13 +453,13 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2019/03/25/citytour-intro/" title="City Tour App (Introduction)">
-                    <div class="nextTitle">City Tour App (Introduction)</div>
-                </a>
-            
         </li>
         <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/03/25/citytour-intro/" title="City Tour App (Introduction)">
+                    <div class="prevTitle">City Tour App (Introduction)</div>
+                </a>
             
         </li>
     </ul>
@@ -546,7 +576,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NoSQL-Database"><span class="toc-number">1.</span> <span class="toc-text">NoSQL Database</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#NoSQL-provides-high-performance-high-availability-at-a-large-scale"><span class="toc-number">1.1.</span> <span class="toc-text">NoSQL provides - high performance, high availability at a large scale</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Why-choose-a-NoSQL-DB"><span class="toc-number">1.1.1.</span> <span class="toc-text">Why choose a NoSQL DB?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#terms"><span class="toc-number">1.1.2.</span> <span class="toc-text">terms</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NoSQL-Database"><span class="toc-number">1.</span> <span class="toc-text">NoSQL Database</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#NoSQL-provides-high-performance-high-availability-at-a-large-scale"><span class="toc-number">1.1.</span> <span class="toc-text">NoSQL provides - high performance, high availability at a large scale</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Why-choose-a-NoSQL-DB"><span class="toc-number">1.1.1.</span> <span class="toc-text">Why choose a NoSQL DB?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-types"><span class="toc-number">1.1.2.</span> <span class="toc-text">4 types</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#terms"><span class="toc-number">1.1.3.</span> <span class="toc-text">terms</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -595,12 +625,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">03/25</span><a class="archive-post-title" href="/2019/03/25/citytour-intro/">City Tour App (Introduction)</a>
+            <span class="archive-post-date">03/25</span><a class="archive-post-title" href="/2019/03/25/NoSQL/">NoSQL</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">03/25</span><a class="archive-post-title" href="/2019/03/25/NoSQL/">NoSQL</a>
+            <span class="archive-post-date">03/25</span><a class="archive-post-title" href="/2019/03/25/citytour-intro/">City Tour App (Introduction)</a>
         </li>
     
     </ul></div>
@@ -608,9 +638,9 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="android"><span class="iconfont-archer">&#xe606;</span>android</span>
-    
         <span class="sidebar-tag-name" data-tags="NoSQl"><span class="iconfont-archer">&#xe606;</span>NoSQl</span>
+    
+        <span class="sidebar-tag-name" data-tags="android"><span class="iconfont-archer">&#xe606;</span>android</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
