@@ -22,7 +22,7 @@
     <meta name="description" content="I'm a gradute studying Computer Science at USC. I'm proficient in Java, Python, and Android Development. Previously, I worked on the Android team at Zillow and as an undergradute researcher with focus on Semantic analysis (machine learning) at The University of Hong Kong. Over the last few years I've developed apps and worked on projects such as CityTour and SmartLock. I am a big fan of traveling and I am super interested in the combination of traveling and technology!!!">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Nicole Han</title>
+    <title>MapReduce · Nicole Han</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">Nicole Han</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">MapReduce</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">Nicole Han</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Nicole Han
-            <!-- 文章页  -->
+            MapReduce
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,49 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                Variety is the spice of life
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="MapReduce">MapReduce</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">352</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/03/27</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,205 +399,76 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/27/MapReduce/">
-            
-                <span>MapReduce</span>
-        </a>
-        <div class="abstract-content">
-            MapReduce IntroductionMapReduce is designed to be applied to Big Data in NoSQL DBs, in data and disk parallel fashion - resulting in dramatic processing gainsMapReduce is a programming framework that allows us to perform distributed and parallel processing on large data sets in a distributed envi...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="MapReduce">MapReduce</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/26/citytour-intro/">
-            
-                <span>City Tour App (Introduction)</span>
-        </a>
-        <div class="abstract-content">
-            City Tour App: e-commerce platform for private tourAndroid app implementationStarting tasks and target:
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="MapReduce-Introduction"><a href="#MapReduce-Introduction" class="headerlink" title="MapReduce Introduction"></a>MapReduce Introduction</h1><h2 id="MapReduce-is-designed-to-be-applied-to-Big-Data-in-NoSQL-DBs-in-data-and-disk-parallel-fashion-resulting-in-dramatic-processing-gains"><a href="#MapReduce-is-designed-to-be-applied-to-Big-Data-in-NoSQL-DBs-in-data-and-disk-parallel-fashion-resulting-in-dramatic-processing-gains" class="headerlink" title="MapReduce is designed to be applied to Big Data in NoSQL DBs, in data and disk parallel fashion - resulting in dramatic processing gains"></a>MapReduce is designed to be applied to Big Data in NoSQL DBs, in data and disk parallel fashion - resulting in <strong>dramatic</strong> processing gains</h2><p><strong>MapReduce is a programming framework that allows us to perform distributed and parallel processing on large data sets in a distributed environment.</strong></p>
+<p><strong>MapReduce works like this:</strong></p>
+<ol>
+<li><strong>big</strong> data is split into file segments, held in a compute cluster made up of nodes (aka partitions)</li>
+<li>a mapper task is run in parallel on all the segments (ie. in each node/partition, in each of its segments); each mapper produces output in the form of multiple (key,value) pairs</li>
+<li>key/value output pairs from all mappers are forwarded to a shuffler, which consolidates each key’s values into a list (and associates it with that key)</li>
+<li>the shuffler forwards keys and their value lists, to multiple reducer tasks; each reducer processes incoming key-value lists, and emits a single value for each key<br><img src="/assets/mapreduce.png" alt="MapReduce"><blockquote>
+<p>MapReduce is a programming model and an associated implementation for processing and generating large data sets. Users specify a <strong>map</strong> function that processes a key/value pair to generate a set of intermediate key/value pairs, and a <strong>reduce</strong> function that merges all intermediate values associated with the same intermediate key.<br>In summary:</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>MapReduce consists of two distinct tasks – Map and Reduce.</li>
+<li>As the name MapReduce suggests, reducer phase takes place after mapper phase has been completed.</li>
+<li>map job: where a block of data is read and processed to produce key-value pairs as intermediate outputs.</li>
+<li>The output of a Mapper or map job (key-value pairs) is input to the <strong>Reducer</strong>.</li>
+<li>The reducer receives the key-value pair from multiple map jobs.</li>
+<li>Then, the reducer aggregates those intermediate data tuples (intermediate key-value pair) into a smaller set of tuples or key-value pairs which is the <strong>final output</strong>.</li>
+</ul>
+<h3 id="Hadoop"><a href="#Hadoop" class="headerlink" title="Hadoop?"></a>Hadoop?</h3><blockquote>
+<p>Hadoop is modeled after the MapReduce paradigm, and is utilized identically (by having users run mappers and reducers on (big) data).</p>
+<p>The following databases are most commonly used inside a Hadoop cluster:</p>
+<ol>
+<li><p>MongoDB</p>
+</li>
+<li><p>Spark</p>
+</li>
+<li><p>Solr</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="HDFS-concepts"><a href="#HDFS-concepts" class="headerlink" title="HDFS concepts"></a>HDFS concepts</h3><blockquote>
+<p>a distributed file system designed to run on commodity hardware</p>
+</blockquote>
 
- Conceptualise the user requirements, user interface design, specifying the software system design and structure using UML (unified modelling language) etc.cyclerView takes the off-screen view...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/26</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="android">android</a>
-    
-</div>
-            
-        </div>
     </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/25/NoSQL/">
-            
-                <span>NoSQL</span>
-        </a>
-        <div class="abstract-content">
-            NoSQL DatabaseNoSQL provides - high performance, high availability at a large scaleA NoSQL DB is:
-
-schema-less: no tables, no relations!
-flexible: easy to add new types of data
-(data) scalable: specifically, ability to ‘scale out’, ie. do ‘horizontal scaling’ - both terms means that we can simply...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/25</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="NoSQl">NoSQl</a>
-    
-</div>
-            
-        </div>
-    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src="/avatar/Misaka.jpg">
-    <div class="profile-name">Nicole Han</div>
-    
-    <div class="profile-signature">
-        Variety is the spice of life.
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+        </li>
+        <li class="previous">
             
-                <a href="mailto:nicole.hannn@gmail.com" class="iconfont-archer email" title="email"></a>
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/03/26/citytour-intro/" title="City Tour App (Introduction)">
+                    <div class="prevTitle">City Tour App (Introduction)</div>
+                </a>
             
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
-            
-                <a href="//github.com/HaibaraAi96" class="iconfont-archer github" target="_blank" title="github"></a>
-            
-        
     
-        
-            
-                <a href="https://www.linkedin.com/in/nicole-han-27243712a/" class="iconfont-archer linkedin" target="_blank" title="linkedin"></a>
-            
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="https://www.instagram.com/haibara_hanhanhan/" class="iconfont-archer instagram" target="_blank" title="instagram"></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href="//caomingkai.github.io" target="_black">Mingkai Cao</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="//hanlingquan.com" target="_black">Lingquan Han</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="//www.linkedin.com/in/joycejinyanmei/" target="_black">Yanmei Jin</a>
-                    </span>
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href="/about">ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -631,6 +550,24 @@ flexible: easy to add new types of data
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MapReduce-Introduction"><span class="toc-number">1.</span> <span class="toc-text">MapReduce Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#MapReduce-is-designed-to-be-applied-to-Big-Data-in-NoSQL-DBs-in-data-and-disk-parallel-fashion-resulting-in-dramatic-processing-gains"><span class="toc-number">1.1.</span> <span class="toc-text">MapReduce is designed to be applied to Big Data in NoSQL DBs, in data and disk parallel fashion - resulting in dramatic processing gains</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hadoop"><span class="toc-number">1.1.1.</span> <span class="toc-text">Hadoop?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HDFS-concepts"><span class="toc-number">1.1.2.</span> <span class="toc-text">HDFS concepts</span></a></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -774,6 +711,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>

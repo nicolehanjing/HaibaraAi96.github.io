@@ -22,7 +22,7 @@
     <meta name="description" content="I'm a gradute studying Computer Science at USC. I'm proficient in Java, Python, and Android Development. Previously, I worked on the Android team at Zillow and as an undergradute researcher with focus on Semantic analysis (machine learning) at The University of Hong Kong. Over the last few years I've developed apps and worked on projects such as CityTour and SmartLock. I am a big fan of traveling and I am super interested in the combination of traveling and technology!!!">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Nicole Han</title>
+    <title>City Tour App (Introduction) · Nicole Han</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">Nicole Han</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">City Tour App (Introduction)</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">Nicole Han</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Nicole Han
-            <!-- 文章页  -->
+            City Tour App (Introduction)
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,49 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                Variety is the spice of life
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="android">android</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">726</span>Reading time: <span class="post-count reading-time">4 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/03/26</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,205 +399,74 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/27/MapReduce/">
-            
-                <span>MapReduce</span>
-        </a>
-        <div class="abstract-content">
-            MapReduce IntroductionMapReduce is designed to be applied to Big Data in NoSQL DBs, in data and disk parallel fashion - resulting in dramatic processing gainsMapReduce is a programming framework that allows us to perform distributed and parallel processing on large data sets in a distributed envi...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="MapReduce">MapReduce</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/26/citytour-intro/">
-            
-                <span>City Tour App (Introduction)</span>
-        </a>
-        <div class="abstract-content">
-            City Tour App: e-commerce platform for private tourAndroid app implementationStarting tasks and target:
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="City-Tour-App-e-commerce-platform-for-private-tour"><a href="#City-Tour-App-e-commerce-platform-for-private-tour" class="headerlink" title="City Tour App: e-commerce platform for private tour"></a>City Tour App: e-commerce platform for private tour</h1><h2 id="Android-app-implementation"><a href="#Android-app-implementation" class="headerlink" title="Android app implementation"></a>Android app implementation</h2><p><strong>Starting tasks and target:</strong></p>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> Conceptualise the user requirements, user interface design, specifying the software system design and structure using UML (unified modelling language) etc.cyclerView takes the off-screen views and rebinds them to the data which is scrolling onto the screen.</li>
+<li style="list-style: none"><input type="checkbox" checked> Develop a working app with baseline functions e.g. map of point of interest, selection of interest points, optimal routing calculation, cost calculation with the help of Google/Baidu Map SDK/API.</li>
+<li style="list-style: none"><input type="checkbox" checked> Continue the app development with features e.g. interaction between tour operators and users etc.</li>
+<li style="list-style: none"><input type="checkbox"> Optimized two algorithms for route design and price calculation according to time-of-arrival, distance, street traffic conditions using Google/Baidu Map SDK; included the possibility of price prediction by machine learning methods.</li>
+</ul>
+<h3 id="Project-description"><a href="#Project-description" class="headerlink" title="Project description"></a>Project description</h3><p><img src="/assets/citytour/taxi.png" alt="City Tour Taxi"></p>
+<blockquote>
+<p><strong>Uber app</strong> is a successful e-commerce platform that cater “taxi trade” where any registered private driver can be a taxi service provider to meet the rider’s requirement/need. Uber has recently announced “Uber Tour” app that uses the same aforementioned platform to cater “sightseeing tour trade” where any registered private driver can be a tour guide/operator for tourist. </p>
+<blockquote>
+<p>However the Uber Tour app is still in its infancy and is largely based on the taxi trade. </p>
+</blockquote>
+<p>In this <strong><a href="https://github.com/HaibaraAi96/CityTourApp" target="_blank" rel="noopener">project</a></strong>, student is required to design and implement an e-commerce platform similar to Uber taxi with creative ideas or features more adequate for a proper tourism purposes; for example, user is allow to create a list of places (or point of interest) with a priority, your “City Tour” app could generate an optimal route and calculate the cost of travel based on distance, time, labour etc., and publish this as a request to the registered private drivers / tour operators as a potential trade deal. Vice-versa the registered private drivers / tour operators could generate a suggested tour with a fairly calculated cost by your app, and advertise to users. Student could think of further more creative ideas/features.</p>
+<p>This app aims to change taxi and travel rules with the principle of sharing economy, in which large data access could optimize the algorithm, detect the information of destinations, thus further human connections. The underlying algorithm relates to “Traveling Salesman Problem”, and I made an improvement based on Dijkstra’s algorithm and Ant colony optimization algorithms. </p>
+<blockquote>
+<p><strong>I am still interested in this optimization and look forward to discussing with anyone intersted in this.</strong></p>
+</blockquote>
+</blockquote>
+<h3 id="Project-outline"><a href="#Project-outline" class="headerlink" title="Project outline"></a>Project outline</h3><blockquote>
+<p>This <strong><a href="https://github.com/HaibaraAi96/CityTourApp" target="_blank" rel="noopener">project</a></strong> is an implementation of an Android mobile application for individualized tour service, which aims to give tourists car service offered by registered private drivers based on tourists’ unique needs. <strong>The main focus of this project will be on route optimization and automatic price calculation.</strong> They are more complex than simply finding the shortest path between two points, but the process of determining the most cost-efficient and comfortable route for travelers. </p>
+<p>Such application, once implemented, may contribute to greater business intelligence and encourage share economy. To conceptualize the user requirements, I will firstly collect the data from users about their requirements by online questionnaire. Data analysis will be done to dig up the importance of each requirement and make a balance between the technical implementation and customer needs. Based on the analyzed data, an interactive prototype of user interface will be initially designed, including layouts, links, as well as transitions in this app. </p>
+<p>The user interaction of the system will also be shown with this prototype. User is allowed to create a list of places with a priority and the time of departure, and this “City Tour” app could generate an optimal route, calculate the cost of travel and publish this as a request to the registered private drivers or tour operators as a potential trade deal. Vice-versa the registered private drivers or tour operators could generate a suggested tour with a fairly calculated cost by this app, and advertise to users. </p>
+<p>Due to the large overlapping functions for tour operators and users, instead of separating the whole application into two apps, I will provide role switch function to solve this problem. The main part of this project - optimal routing and cost calculation will be implemented with the help of Google/Baidu Map APIs.</p>
+</blockquote>
+<hr>
+<p><img src="/assets/citytour/happy.png" alt="City Tour Taxi"><br><strong><a href="https://github.com/HaibaraAi96/CityTourApp" target="_blank" rel="noopener">City Tour App</a></strong> is now published by <strong><a href="https://www.crcpress.com/Mobile-Apps-Engineering-Design-Development-Security-and-Testing/Mostefaoui-Tariq/p/book/9781138054356" target="_blank" rel="noopener">CRC</a></strong> - Mobile Apps Engineering: Design, Development, Security, and Testing (Chapter “City Tour App”)</p>
 
- Conceptualise the user requirements, user interface design, specifying the software system design and structure using UML (unified modelling language) etc.cyclerView takes the off-screen view...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/26</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="android">android</a>
-    
-</div>
-            
-        </div>
     </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2019/03/25/NoSQL/">
-            
-                <span>NoSQL</span>
-        </a>
-        <div class="abstract-content">
-            NoSQL DatabaseNoSQL provides - high performance, high availability at a large scaleA NoSQL DB is:
-
-schema-less: no tables, no relations!
-flexible: easy to add new types of data
-(data) scalable: specifically, ability to ‘scale out’, ie. do ‘horizontal scaling’ - both terms means that we can simply...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/03/25</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="NoSQl">NoSQl</a>
-    
-</div>
-            
-        </div>
-    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src="/avatar/Misaka.jpg">
-    <div class="profile-name">Nicole Han</div>
-    
-    <div class="profile-signature">
-        Variety is the spice of life.
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+                <div class="nextSlogan">Next Post</div>
+                <a href="/2019/03/27/MapReduce/" title="MapReduce">
+                    <div class="nextTitle">MapReduce</div>
+                </a>
             
-                <a href="mailto:nicole.hannn@gmail.com" class="iconfont-archer email" title="email"></a>
+        </li>
+        <li class="previous">
             
-        
-    
-        
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2019/03/25/NoSQL/" title="NoSQL">
+                    <div class="prevTitle">NoSQL</div>
+                </a>
             
-                <a href="//github.com/HaibaraAi96" class="iconfont-archer github" target="_blank" title="github"></a>
-            
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
-            
-                <a href="https://www.linkedin.com/in/nicole-han-27243712a/" class="iconfont-archer linkedin" target="_blank" title="linkedin"></a>
-            
-        
     
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="https://www.instagram.com/haibara_hanhanhan/" class="iconfont-archer instagram" target="_blank" title="instagram"></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href="//caomingkai.github.io" target="_black">Mingkai Cao</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="//hanlingquan.com" target="_black">Lingquan Han</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href="//www.linkedin.com/in/joycejinyanmei/" target="_black">Yanmei Jin</a>
-                    </span>
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href="/about">ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -631,6 +548,24 @@ flexible: easy to add new types of data
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#City-Tour-App-e-commerce-platform-for-private-tour"><span class="toc-number">1.</span> <span class="toc-text">City Tour App: e-commerce platform for private tour</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-app-implementation"><span class="toc-number">1.1.</span> <span class="toc-text">Android app implementation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-description"><span class="toc-number">1.1.1.</span> <span class="toc-text">Project description</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-outline"><span class="toc-number">1.1.2.</span> <span class="toc-text">Project outline</span></a></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -774,6 +709,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
