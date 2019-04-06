@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">325</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                        <span>Word count: <span class="post-count word-count">797</span>Reading time: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -401,7 +401,9 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="NoSQL-Database"><a href="#NoSQL-Database" class="headerlink" title="NoSQL Database"></a>NoSQL Database</h1><h2 id="NoSQL-provides-high-performance-high-availability-at-a-large-scale"><a href="#NoSQL-provides-high-performance-high-availability-at-a-large-scale" class="headerlink" title="NoSQL provides - high performance, high availability at a large scale"></a>NoSQL provides - high performance, high availability at a large scale</h2><p><strong>A NoSQL DB is:</strong></p>
+        <h1 id="NoSQL-Database"><a href="#NoSQL-Database" class="headerlink" title="NoSQL Database"></a>NoSQL Database</h1><p>NoSQL provides - high performance, high availability <strong>at a large scale</strong></p>
+<h2 id="No-relational-SQL-no-SQL-no-only-SQL"><a href="#No-relational-SQL-no-SQL-no-only-SQL" class="headerlink" title="No relational SQL, no SQL, no only SQL"></a>No relational SQL, no SQL, no only SQL</h2><p>Why needed? A lot of new data!!! Avoidance of complexity</p>
+<p><strong>A NoSQL DB is:</strong></p>
 <ol>
 <li>schema-less: no tables, no relations!</li>
 <li>flexible: easy to add new types of data</li>
@@ -412,26 +414,63 @@ height:50vh;
 <p>“to improve programmer productivity by using a database that better matches an application’s needs”</p>
 <p>“to improve data access performance via some combination of handling larger data volumes, reducing latency, and improving throughput”</p>
 </blockquote>
-<h3 id="4-types"><a href="#4-types" class="headerlink" title="4 types"></a>4 types</h3><ol>
+<h4 id="JSON-for-storing-an-ENTIRE-DB"><a href="#JSON-for-storing-an-ENTIRE-DB" class="headerlink" title="JSON for storing an ENTIRE DB!!"></a>JSON for storing an ENTIRE DB!!</h4><p>db == JSON []array of {}objects, where each object (‘row’) is a set of <strong>a key-value pairs</strong>.<br>{<br>“ID”: 1,<br>“STATE”: “CA”<br>}</p>
+<h3 id="“BASE”-property"><a href="#“BASE”-property" class="headerlink" title="“BASE” property:"></a>“BASE” property:</h3><ul>
+<li>BAsic availability: DB is up most of the time</li>
+<li>Soft state: consistency is not guaranteed while data is written to a node, or between replicas</li>
+<li>Eventual consistency: ata a later point in time, by push or pull, data will come consistent across nodes and replicas</li>
+</ul>
+<blockquote>
+<p>The schema is “implicit”</p>
+<p><strong>comparison metric:</strong></p>
+<ul>
+<li>architecture</li>
+<li>administration</li>
+<li>deployment</li>
+<li>development</li>
+<li>performance and scalability</li>
+</ul>
+</blockquote>
+<h4 id="NoSQL-advantages"><a href="#NoSQL-advantages" class="headerlink" title="NoSQL advantages:"></a>NoSQL advantages:</h4><ol>
+<li>high scalability</li>
+<li>schema flexibility</li>
+<li>distributed computing</li>
+<li>no complicated relationships</li>
+<li>lower cost</li>
+<li>open source</li>
+</ol>
+<h3 id="terms"><a href="#terms" class="headerlink" title="terms"></a>terms</h3><blockquote>
+<p>Node<br>: a single NoSQL db instance - holds a part of a db</p>
+<p>Cluster<br>: a collection of nodes - holds an entire db</p>
+</blockquote>
+<h2 id="4-types-of-NoSQL-DBs"><a href="#4-types-of-NoSQL-DBs" class="headerlink" title="4 types of NoSQL DBs"></a>4 types of NoSQL DBs</h2><ol>
 <li>Key-Value: </li>
 </ol>
 <ul>
 <li>e.g. DynamoDB (Amazon) </li>
-<li>The whole db is a dictionary, which has records (“rows”) which have fields (columns).</li>
+<li>The whole db is a <strong>dictionary</strong>, which has records (“rows”) which have fields (columns). </li>
+<li>Querying occurs only on <strong>keys</strong>. When querying on a key, the entire value (aggregate) (for matching keys) is returned.</li>
+<li><strong>k/v DBs are lightweight (simple), schema-less, transaction-less.</strong></li>
 </ul>
 <ol start="2">
 <li>Column-Family</li>
 </ol>
 <ul>
-<li>Rather than dealing with rows of data, we deal with columns of them. So such databases are good for aggregate queries (eg. average age of employees in a company), and queries involving just a subset of all columns (eg. retrieve a student’s academic info).</li>
+<li>Rather than dealing with rows of data, we deal with <strong>columns</strong> of them. So such databases are good for <strong>aggregate queries</strong> (eg. average age of employees in a company), and queries involving just a subset of all columns (eg. retrieve a student’s academic info).</li>
+<li>Data is stored using ‘row keys’ (each row (picturing the data as a classic relational table) is assigned a unique key</li>
+<li><strong>Column:</strong> consists of a name (key) and a value; there is such a name:value pair for each row key, giving us a single column’s worth of data for all rows (eg. GPAs of all students at USC).</li>
+<li><strong>Column family:</strong> contains columns of related data (eg. for a ‘Users’ DB, the columns might be Name, Age, DOB, Address, Email), for all rows. A column family would have many rows of data, where for each row, there would be multiple columns and values.</li>
+<li>In a column family, row keys directly contain (as values) column data, similar to a rectangular table; in contrast, in a supercolumn family, row keys contain (as values), k:v pairs, with supercolumn (“column group”) keys, and ‘column_name:column_value’ values [so there is an extra level of indirection, provided by the supercolumn names]. Column family -&gt; column data; supercolumn family -&gt; supercolumns -&gt; column data.</li>
 </ul>
 <ol start="3">
 <li>Graph</li>
 </ol>
 <ul>
 <li>A graph database uses (contains) graph entities such as nodes (vertices), relations (edges), and properties (k-v pairs) on vertices and edges, to store data.</li>
+<li>A graph DB is said to be ‘index free’, since each node directly stores pointers to its adjacent nodes.</li>
 <li>In a graph db, the focus is on relationships between ‘linked data’.</li>
 <li>Uses: social networks, recommendation engines, etc</li>
+<li>Each row in a table becomes a node, and columns (and their values), node properties.</li>
 </ul>
 <ol start="4">
 <li>Document: </li>
@@ -439,13 +478,22 @@ height:50vh;
 <ul>
 <li>e.g. MongoDB</li>
 <li>The basic unit of storage in a document DB is a document - this can be JSON, XML, etc. There can be an arbitrary number of fields (columns and values, ie. k/v pairs) in each document.</li>
-<li>In a document DB, a key is paired with a document (which is its ‘value’), where the document itself can contain multiple k/v pairs, key-array pairs, or even key-document pairs (ie nested documents).</li>
+<li><strong>In a document DB, a key is paired with a document (which is its ‘value’), where the document itself can contain multiple k/v pairs, key-array pairs, or even key-document pairs (ie nested documents).</strong></li>
 </ul>
-<h3 id="terms"><a href="#terms" class="headerlink" title="terms"></a>terms</h3><blockquote>
-<p>Node<br>: a single NoSQL db instance - holds a part of a db</p>
-<p>Cluster<br>: a collection of nodes - holds an entire db</p>
+<h4 id="What-is-a-triple-store"><a href="#What-is-a-triple-store" class="headerlink" title="What is a triple store?"></a>What is a triple store?</h4><ul>
+<li>A triple store (or triplestore, or RDF) database stores triples of (subject,predicate,object).</li>
+<li><p>A triple defines a directed binary relation, via its predicate/attribute/property. In relational form, we express this as predicate(subject,object).</p>
+<blockquote>
+<p>Subject: what we are describing.</p>
+<p>Predicate: a property of the subject.</p>
+<p>Object: the predicate’s (property’s) value.</p>
 </blockquote>
-
+</li>
+<li><p>Querying a triplet store can be done in one of several RDF query languages, eg. RDQL, SPARQL, RQL, SeRQL, Versa.. Of these, <strong>SPARQL</strong> is currently the most popular.</p>
+</li>
+<li>The output of a triple store query is called a <strong>‘graph’</strong>.</li>
+</ul>
+<h4 id="In-a-triple-the-predicate-is-given-equal-status-to-subject-and-object-upcoming-examples-will-make-this-clear"><a href="#In-a-triple-the-predicate-is-given-equal-status-to-subject-and-object-upcoming-examples-will-make-this-clear" class="headerlink" title="In a triple, the predicate is given equal status to subject and object [upcoming examples will make this clear]."></a>In a triple, the predicate is given equal status to subject and object [upcoming examples will make this clear].</h4>
     </article>
     <!-- license  -->
     
@@ -576,7 +624,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NoSQL-Database"><span class="toc-number">1.</span> <span class="toc-text">NoSQL Database</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#NoSQL-provides-high-performance-high-availability-at-a-large-scale"><span class="toc-number">1.1.</span> <span class="toc-text">NoSQL provides - high performance, high availability at a large scale</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Why-choose-a-NoSQL-DB"><span class="toc-number">1.1.1.</span> <span class="toc-text">Why choose a NoSQL DB?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-types"><span class="toc-number">1.1.2.</span> <span class="toc-text">4 types</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#terms"><span class="toc-number">1.1.3.</span> <span class="toc-text">terms</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NoSQL-Database"><span class="toc-number">1.</span> <span class="toc-text">NoSQL Database</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#No-relational-SQL-no-SQL-no-only-SQL"><span class="toc-number">1.1.</span> <span class="toc-text">No relational SQL, no SQL, no only SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Why-choose-a-NoSQL-DB"><span class="toc-number">1.1.1.</span> <span class="toc-text">Why choose a NoSQL DB?</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#JSON-for-storing-an-ENTIRE-DB"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">JSON for storing an ENTIRE DB!!</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#“BASE”-property"><span class="toc-number">1.1.2.</span> <span class="toc-text">“BASE” property:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#NoSQL-advantages"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">NoSQL advantages:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#terms"><span class="toc-number">1.1.3.</span> <span class="toc-text">terms</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-types-of-NoSQL-DBs"><span class="toc-number">1.2.</span> <span class="toc-text">4 types of NoSQL DBs</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#What-is-a-triple-store"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">What is a triple store?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#In-a-triple-the-predicate-is-given-equal-status-to-subject-and-object-upcoming-examples-will-make-this-clear"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">In a triple, the predicate is given equal status to subject and object [upcoming examples will make this clear].</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -638,9 +686,42 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 5
+        Total : 8
         </div>
         <!-- search  -->
         
@@ -653,6 +734,21 @@ top:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/04</span><a class="archive-post-title" href="/2019/04/04/storyboard/">iOS Storyboard</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/30</span><a class="archive-post-title" href="/2019/03/30/viewController/">iOS View Controller</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/29</span><a class="archive-post-title" href="/2019/03/29/launchScreen/">iOS Launch Screen</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -684,11 +780,13 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="MapReduce"><span class="iconfont-archer">&#xe606;</span>MapReduce</span>
-    
         <span class="sidebar-tag-name" data-tags="NoSQl"><span class="iconfont-archer">&#xe606;</span>NoSQl</span>
     
+        <span class="sidebar-tag-name" data-tags="MapReduce"><span class="iconfont-archer">&#xe606;</span>MapReduce</span>
+    
         <span class="sidebar-tag-name" data-tags="android"><span class="iconfont-archer">&#xe606;</span>android</span>
+    
+        <span class="sidebar-tag-name" data-tags="iOS"><span class="iconfont-archer">&#xe606;</span>iOS</span>
     
         <span class="sidebar-tag-name" data-tags="datamining"><span class="iconfont-archer">&#xe606;</span>datamining</span>
     
